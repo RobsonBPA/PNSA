@@ -1,0 +1,116 @@
+/* ===== HORÁRIO DE MISSAS ===== */
+
+.grade {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: var(--branco);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: var(--sombra);
+  border-top: 5px solid var(--dourado);
+  min-height: 230px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.card ul {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.item-card-missa {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.item-card-missa:last-child {
+  border-bottom: none;
+}
+
+.item-card-missa strong {
+  color: var(--azul-profundo);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* ===== NOSSO CLERO ===== */
+.card-clero {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.card-clero img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+/* ===== COMO CHEGAR ===== */
+.contato-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 50px;
+}
+
+.card-contato {
+  background: var(--branco);
+  border-radius: 18px;
+  box-shadow: var(--sombra);
+  padding: 30px;
+}
+
+i {
+    color: var(--cinza-texto);
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mapa {
+  min-height: 320px;
+  background: linear-gradient(135deg, #d8d8d8, #f1f1f1);
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--azul-escuro);
+  padding: 25px;
+  font-weight: 700;
+}

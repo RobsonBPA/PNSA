@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/padroeira/padroeira.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+    <title>Padroeira</title>
+</head>
+
+<!-- Navbar e footer -->
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+
+<body>
+    <div id="navbar-placeholder"></div> <!-- Navbar -->
+
+    <!-- Conteúdo principal -->
+    <section id="inicio-padroeira" class="inicio inicio-padroeira">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Nossa Senhora Aparecida</h1>
+                <p>Rainha e Padroeira do Brasil</p>
+                <a href="#padroeira-historia" class="botao botao-primario">Veja a História da Nossa Padroeira</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programação -->
+    <section id="padroeira-historia" class="tabela">
+        <h2>Nossa Senhora Aparecida</h2>
+        
+        <h3>Padroeira do Brasil</h3>
+        <p>Em outubro de 1717, Felipe Pedroso, Domingos Martins e João Alves foram pescar, pois o então Governador do Brasil, Conde Assumar, foi visitar Guaratinguetá e aqueles dias eram de abstinência de carne.</p>
+        <p>Após tentarem pescar e não conseguirem, os três pescadores encontraram uma imagem de terracota em duas partes, representando a Imaculada Conceição. Ela foi pescada em duas partes, na primeira encontraram o corpo e na segunda a cabeça. Após isso, veio uma grande pesca.</p>
+        <p>Os pescadores e seus familiares rezavam todas as noites diante da imagem da Virgem Imaculada. Pouco tempo depois, Felipe Pedroso construiu um oratório para colocar a imagem. As pessoas que sabiam do acontecimento se reuniam e rezavam o terço todos os sábados. A partir disso, começaram a ocorrer milagres.</p>
+        <p>No ano de 1904, o Papa São Pio X deu a coroação solene da imagem, e em 1930, Pio XI declarou e proclamou “Rainha e Padroeira do Brasil”.</p>
+    </section>
+
+</body>
+<div id="footer-placeholder"></div> <!-- Rodapé -->
+</html>

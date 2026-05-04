@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/galeria/galeria.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>Álbum</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ===== INÍCIO (BANNER) ===== -->
+  <section id="inicio-album" class="inicio">
+    <div class="container">
+      <div class="inicio-content">
+        <h1 id="titulo"></h1>
+        <p id="data"></p>
+        <a href="#fotos" class="botao botao-primario">Ver fotos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section id="fotos" class="tabela-index">
+    <div class="container">
+      <h1 id="titulo2"></h1>
+      <div class="galeria-grid" id="grid-fotos"></div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div id="lightbox" class="lightbox">
+    <span class="fechar">&times;</span>
+    <img id="lightbox-img">
+  </div>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    fetch('js/pages/galeria/galeria.json')
+      .then(res => res.json())
+      .then(data => {
+        const album = data.find(a => a.id === id);
+
+        if (!album) {
+          document.body.innerHTML = "<h1>Álbum não encontrado</h1>";
+          return;
+        }
+
+        // TÍTULOS
+        document.getElementById("titulo").innerText = album.titulo;
+        document.getElementById("titulo2").innerText = album.titulo;
+        document.getElementById("data").innerText = album.data;
+
+        // FUNDO DO BANNER
+        const banner = document.getElementById("inicio-album");
+        banner.style.backgroundImage = `url('${album.capa}')`;
+
+        // GERAR IMAGENS
+        const grid = document.getElementById("grid-fotos");
+
+        for (let i = 1; i <= album.total; i++) {
+          const img = `
+            <div class="foto-item">
+              <img src="${album.caminho}foto${i}.jpg" alt="Foto ${i}">
+            </div>
+          `;
+          grid.innerHTML += img;
+        }
+      });
+
+    // ===== LIGHTBOX =====
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function(e) {
+      if (e.target.tagName === "IMG" && e.target.closest(".foto-item")) {
+        lightbox.style.display = "flex";
+        lightboxImg.src = e.target.src;
+      }
+    });
+
+    // Fechar no X
+    document.querySelector(".fechar").onclick = () => {
+      lightbox.style.display = "none";
+    };
+
+    // Fechar fora da imagem
+    lightbox.onclick = (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    };
+
+    // NAVBAR E FOOTER
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+</body>
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+</html>

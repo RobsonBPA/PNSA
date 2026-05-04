@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/dizimo/dizimo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+    <title>Paróquia Nossa Senhora Aparecida</title>
+</head>
+<!-- NAVBAR -->
+
+<body>
+    <div id="navbar-placeholder"></div> <!-- Navbar -->
+
+    <!-- ====== INÍCIO DA PÁGINA ===== -->
+    <main id="inicio-dizimo" class="inicio inicio-dizimo">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Seja dizimista!</h1>
+                <p>Ajude a paróquia em suas despesas e projetos</p>
+                <a href="#dizimo" class="botao botao-primario">Ajude-nos!</a>      
+            </div>
+        </div>
+    </main>
+
+    <section id="dizimo"class="dizimo container">
+        <h1>Seja Dizimista</h1>
+        <p class="descricao">
+            O dízimo é um ato de fé, gratidão e compromisso com a Igreja.
+            Com sua contribuição, a paróquia pode manter suas atividades,
+            obras e evangelização.
+        </p>
+
+        <div class="grade grade-2">
+            <!-- ORAÇÃO -->
+            <article class="card-dizimo">
+            <h3>Oração do Dizimista</h3>
+            <p class="oracao">
+                Recebei, Senhor, a minha oferta.<br>
+                Ela não é uma esmola, porque não sois mendigo.<br>
+                Não é apenas uma contribuição, porque não precisais dela.<br>
+                Não é o resto que me sobra que vos ofereço.<br>
+                Esta importância representa minha gratidão e reconhecimento.<br>
+                <strong>Amém.</strong>
+            </p>
+            </article>
+
+            <!-- PIX -->
+            <article class="card-dizimo pix-info">
+                <h3>Oferta via PIX</h3>
+
+                <p><strong>Chave PIX (CNPJ)</strong></p>
+
+                <div class="pix-chave">
+                    45.397.254/0035-72
+                </div>
+
+                <p class="pix-banco">
+                    ITAÚ UNIBANCO S.A.<br>
+                    ARQUIDIOCESE DE SOROCABA
+                </p>
+
+                <p><strong>QR Code (Escaneie)</strong></p>
+
+                <div class="qr-code">
+                    <img src="images/pages/dizimo/qrCode.jpeg" alt="QR Code Dízimo">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- NAVBAR E FOOTER -->
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+</html>

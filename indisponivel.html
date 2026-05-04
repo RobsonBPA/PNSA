@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/secretaria/secretaria.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+    <title>Confissões</title>
+</head>
+
+<!-- Navbar e footer -->
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+
+<body>
+    <div id="navbar-placeholder"></div> <!-- Navbar -->
+
+    <!-- Conteúdo principal -->
+    <section id="inicio-indisponivel" class="inicio inicio-indisponivel">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Página em Desenvolvimento</h1>
+                <p>Estamos trabalhando para a criação desta página. Em breve estará disponível!</p>
+                <a href="index.html" class="botao botao-primario">Volte à Página Inicial</a>
+            </div>
+        </div>
+    </section>
+</body>
+<div id="footer-placeholder"></div> <!-- Rodapé -->
+</html>

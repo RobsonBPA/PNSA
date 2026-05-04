@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/oracoes/oracoes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>Orações | Aumente sua fé!</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- INÍCIO -->
+  <main id="inicio-oracoes" class="inicio inicio-oracoes">
+      <div class="container">
+        <div class="inicio-content">
+          <h1>Orações</h1>
+          <p>Aprenda orações para fazer no seu dia a dia e aumentar sua fé</p>
+          <a href="#oracoes" class="botao botao-primario">Ver orações</a>
+        </div>
+      </div>
+  </main>
+
+  <!-- GRID -->
+  <section>
+    <div class="container">
+      <h1>Orações disponíveis</h1>
+      <div class="oracoes-grid" id="oracoes"></div>
+    </div>
+  </section>
+  
+  <!-- Geração dos cards de forma automática -->
+  <script>
+    fetch('js/pages/oracoes/oracoes.json')
+    .then(res => res.json())
+    .then(data => {
+      const grid = document.getElementById("oracoes");
+
+      data.forEach(oracao => {
+        const card = `
+          <a href="oracao.html?id=${oracao.id}" class="card-oracao">
+            <img src="${oracao.imagem}" alt="${oracao.titulo}">
+            
+            <div class="conteudo">
+              <div class="titulo">${oracao.titulo}</div>
+              <p class="descricao-card">${oracao.descricao}</p>
+            </div>
+          </a>
+        `;
+
+        grid.innerHTML += card;
+      });
+    });
+  </script>
+
+  <!-- NAVBAR E FOOTER -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+</body>
+
+<div id="footer-placeholder"></div>
+</html>

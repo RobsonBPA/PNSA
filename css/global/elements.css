@@ -1,0 +1,120 @@
+/* ===== BOTÕES ===== */
+
+.botao {
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.botao-primario {
+    background: var(--dourado-escuro);
+    border: 3px solid var(--dourado-escuro);
+    color: var(--branco);
+}
+
+.botao-primario:hover {
+    background: var(--dourado-claro);
+    border: 3px solid var(--dourado-claro);
+    color: var(--azul-escuro);
+    transform: translateY(-2px);
+}
+
+.botao-secundario {
+    margin-top: 20px;
+    background: var(--azul-claro);
+    border: 3px solid var(--azul-claro);
+    color: var(--branco);
+}
+
+.botao-secundario:hover {
+    background: var(--azul-escuro);
+    border: 3px solid var(--azul-escuro);
+    color: var(--branco);
+    transform: translateY(-2px);
+}
+
+.botao-terciario {
+    background: transparent;
+    border: 3px solid var(--azul-escuro);
+    color: var(--branco);
+}
+
+.botao-terciario:hover {
+    background: var(--azul-escuro);
+    transform: translateY(-2px);
+}
+
+
+
+/* ===== TABELA ===== */
+.tabela {
+    background: var(--background);
+    color: var(--cinza-texto);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 20px 25px;
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#tabela-verde h2 {
+    background-color: var(--cor-verde);
+}
+
+#tabela-roxo h2 {
+    background-color: var(--cor-roxo);
+}
+
+#tabela-rosa h2 {
+    background-color: var(--cor-rosa);
+}
+
+#tabela-vermelho h2 {
+    background-color: var(--cor-vermelho);
+}
+
+#tabela-preto h2 {
+    background-color: var(--cor-preto);
+}
+
+#tabela-dourado h2 {
+    background-color: var(--cor-dourado);
+}
+
+.tabela-importante {
+    box-shadow: 0 4px 8px #D4AF37;
+}
+
+.tabela h2 {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -25px 20px;
+}
+
+.tabela h3 {
+    color: var(--azul-escuro);
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.tabela a {
+    color: var(--cinza-texto);
+}
+
+#texto-pequeno {
+    font-size: 14px;
+}

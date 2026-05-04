@@ -1,0 +1,183 @@
+.top-bar {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    font-size: 0.9rem;
+    padding: 8px 6%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.top-bar a:hover {
+    color: var(--cor-dourado);
+}
+
+header {
+    background-color: #4169e1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+/* Links */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background: #ffd700;
+    border-radius: 5px;
+}
+
+/* Botões da esquerda e direita */
+.left-buttons, .right-buttons {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+}
+
+/* ================= MOBILE ================= */
+
+.menu-btn {
+    display: none;
+}
+
+/* Ícone do botão */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    height: 25px;
+}
+
+.navicon {
+    background: white;
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.navicon:before,
+.navicon:after {
+    content: '';
+    background: white;
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s ease-out;
+}
+
+.navicon:before {
+    top: -8px;
+}
+
+.navicon:after {
+    top: 8px;
+}
+
+/* Transformar o ícone em "X" */
+.menu-btn:checked + .menu-icon .navicon {
+    background: transparent;
+}
+
+.menu-btn:checked + .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-btn:checked + .menu-icon .navicon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* Menu mobile */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #00467f;
+    transition: max-height 0.3s ease-out;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    transition: background 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #4169e1;
+}
+
+.menu-btn:checked ~ .menu {
+    max-height: 500px;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+    /* Oculta os links */
+    .left-buttons, .right-buttons {
+        display: none;
+    }
+
+.menu-icon {
+    display: block; /* Mostra o ícone do menu */
+    /* Centraliza o ícone do menu */
+    top: 50%;
+    transform: translateY(-7%);
+    }
+}
+
+@media (min-width: 769px) {
+    .menu,
+    .menu-icon,
+    .menu-btn {
+        display: none;
+    }
+
+    .header ul {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+}

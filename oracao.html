@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/oracoes/oracoes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>Orações</title>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <!-- INÍCIO -->
+    <section id="inicio-oracao" class="inicio">
+      <div class="container">
+          <div class="inicio-content">
+              <h1 id="titulo"></h1>
+              <p id="descricao"></p>
+              <a href="#conteudo" class="botao botao-primario">Rezar agora</a>
+          </div>
+      </div>
+    </section>
+  
+    <!-- CONTEÚDO -->
+    <section id="conteudo" class="tabela">
+        <h2 id="titulo2"></h2>
+        
+        <div class="oracao-pagina">
+            <p id="texto"></p>
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+      
+      fetch('js/pages/oracoes/oracoes.json')
+        .then(res => res.json())
+        .then(data => {
+          const oracao = data.find(o => o.id === id);
+      
+          if (!oracao) {
+            document.body.innerHTML = "<h1>Oração não encontrada</h1>";
+            return;
+          }
+      
+          document.getElementById("titulo").innerHTML = oracao.titulo;
+          document.getElementById("titulo2").innerHTML = oracao.titulo;
+          document.getElementById("descricao").innerHTML = oracao.descricao;
+          document.getElementById("texto").innerHTML = oracao.texto;
+      
+          document.getElementById("inicio-oracao").style.backgroundImage =
+            `url(${oracao.banner})`;
+        });
+        
+      fetch('navbar.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+
+</body>
+
+<div id="footer-placeholder"></div>
+</html>

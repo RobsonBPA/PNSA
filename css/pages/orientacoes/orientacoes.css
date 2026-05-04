@@ -1,0 +1,90 @@
+/* ===== TÍTULO / HERO ===== */
+.inicio-content p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* ===== SEÇÃO PRINCIPAL ===== */
+.orientacoes {
+  padding: 40px 6%;
+}
+
+/* ===== GRID ===== */
+.grade {
+  display: grid;
+  gap: 24px;
+}
+
+/* ===== CARD ===== */
+.card-orientacao {
+  background: var(--branco);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: var(--sombra);
+  border-top: 5px solid var(--vermelho);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-orientacao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-orientacao h3 {
+  margin-bottom: 15px;
+  color: var(--azul-escuro);
+  font-size: 1.2rem;
+}
+
+/* ===== LISTA ===== */
+.lista-nao-fazer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-nao-fazer li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.lista-nao-fazer li:last-child {
+  border-bottom: none;
+}
+
+.lista-nao-fazer i {
+  color: var(--vermelho);
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+/* ===== BLOCO POSITIVO (OPCIONAL) ===== */
+.card-orientacao.sucesso {
+  border-top: 5px solid var(--verde);
+}
+
+.lista-fazer i {
+  color: var(--verde);
+}
+
+/* ===== TEXTO ===== */
+.texto-pequeno {
+  font-size: 0.9rem;
+  color: var(--cinza-texto);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}

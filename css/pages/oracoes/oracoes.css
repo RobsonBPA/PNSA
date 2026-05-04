@@ -1,0 +1,75 @@
+/* ===== GRID ===== */
+.oracoes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .oracoes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .oracoes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== CARD ===== */
+.card-oracao {
+  background: var(--branco);
+  border-radius: 18px;
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  border-top: 5px solid var(--dourado);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-oracao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+/* ===== IMAGEM ===== */
+.card-oracao img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== CONTEÚDO ===== */
+.card-oracao .conteudo {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-oracao .titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--azul-escuro);
+}
+
+.descricao-card {
+  font-size: 0.9rem;
+  color: var(--cinza-texto);
+  margin-top: 8px;
+}
+
+#inicio-oracao {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ===== PÁGINA DA ORAÇÃO ===== */
+.oracao-pagina {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 2;
+}

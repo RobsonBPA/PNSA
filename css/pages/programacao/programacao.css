@@ -1,0 +1,186 @@
+/* ===== TÍTULO DA PÁGINA ===== */
+.titulo-pagina {
+  text-align: center;
+  margin: 40px 0 10px;
+  color: var(--azul-escuro);
+}
+
+.subtitulo-pagina {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--cinza-texto);
+}
+
+
+
+/* ===== CALENDÁRIO ===== */
+#calendar {
+  color: var(--cinza-texto);
+  border-radius: 18px;
+  box-shadow: var(--sombra);
+  padding: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  font-size: 1rem;
+  background: var(--branco);
+}
+
+/* Barra do calendário */
+.fc-toolbar-title {
+  color: var(--azul-claro);
+  font-weight: bold;
+}
+
+.fc-button {
+  background: var(--azul-escuro) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 6px 10px !important;
+}
+
+.fc-button:hover {
+  background: var(--azul-claro) !important;
+}
+
+/* Eventos do calendário */
+.fc-daygrid-event {
+  background-color: var(--azul-escuro);
+  color: #fff;
+  padding: 2px 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Tooltip */
+.tooltip-evento {
+  position: absolute;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  pointer-events: none;
+  max-width: 260px;
+}
+
+.tooltip-evento strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tooltip-evento .linha {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: 0.85rem;
+}
+
+.tooltip-evento i {
+  color: var(--dourado);
+}
+
+
+
+
+/* ===== PROGRAMAÇÃO SEMANAL ===== */
+.programacao-semanal {
+  padding: 40px 6%;
+}
+
+/* Cards */
+.grade {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: var(--branco);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: var(--sombra);
+  min-height: 220px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: var(--azul-escuro);
+}
+
+.evento {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.evento:last-child {
+  border-bottom: none;
+}
+
+.evento strong {
+  display: block;
+  color: var(--azul-profundo);
+}
+
+.evento p {
+  margin: 4px 0;
+}
+
+.evento span {
+  font-size: 0.85rem;
+  color: var(--cinza-texto);
+}
+
+/* ===== Cores Litúrgicas ===== */
+.tabela-verde {
+    border-top: 5px solid var(--verde);
+}
+
+.tabela-roxo {
+    border-top: 5px solid var(--roxo);
+}
+
+.tabela-rosa {
+    border-top: 5px solid var(--rosa);
+}
+.tabela-vermelho {
+  border-top: 5px solid var(--vermelho);
+}
+
+.tabela-preto {
+  border-top: 5px solid var(--preto);
+}
+
+.tabela-dourado {
+  border-top: 5px solid var(--dourado-escuro);
+}
+
+
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
+
+  #calendar {
+    font-size: 0.9rem;
+  }
+}

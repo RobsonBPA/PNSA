@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/orientacoes/orientacoes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>Orientações Para a Santa Missa</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div id="navbar-placeholder"></div>
+
+    <!-- ====== INÍCIO DA PÁGINA ===== -->
+    <main id="inicio-orientacoes" class="inicio inicio-orientacoes">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Orientações para a Santa Missa</h1>
+                <p>Atitudes para preservar o respeito e a santidade da celebração</p>
+                <a href="#horarios" class="botao botao-primario">Saiba mais</a>      
+            </div>
+        </div>
+    </main>
+
+  <section id="atitudes" class="orientacoes container">
+    <h1>Orientações para a Santa Missa</h1>
+    <p class="descricao">
+      Para preservar o respeito e a santidade da celebração, evite as atitudes abaixo.
+    </p>
+
+    <div class="grade grade-2">
+
+      <article class="card-orientacao">
+        <h3>O que não fazer</h3>
+        <ul class="lista-nao-fazer">
+          <li><i class="fas fa-times-circle"></i> Bater palmas ou fazer coreografias</li>
+          <li><i class="fas fa-times-circle"></i> Usar roupas impróprias</li>
+          <li><i class="fas fa-times-circle"></i> Conversar durante a celebração</li>
+          <li><i class="fas fa-times-circle"></i> Comer ou mascar chiclete</li>
+          <li><i class="fas fa-times-circle"></i> Usar o celular</li>
+          <li><i class="fas fa-times-circle"></i> Chegar atrasado</li>
+          <li><i class="fas fa-times-circle"></i> Sair antes do padre</li>
+        </ul>
+      </article>
+
+      <article class="card-orientacao sucesso">
+        <h3>O que fazer</h3>
+        <ul class="lista-nao-fazer lista-fazer">
+          <li><i class="fas fa-check-circle"></i> Chegar com antecedência</li>
+          <li><i class="fas fa-check-circle"></i> Participar com atenção</li>
+          <li><i class="fas fa-check-circle"></i> Vestir-se com modéstia</li>
+          <li><i class="fas fa-check-circle"></i> Manter silêncio e recolhimento</li>
+          <li><i class="fas fa-check-circle"></i> Comungar em estado de graça</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- NAVBAR E FOOTER -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+</body>
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+</html>

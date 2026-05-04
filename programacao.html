@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/programacao/programacao.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>Programação Paroquial</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- ====== INÍCIO DA PÁGINA ===== -->
+    <main id="inicio-programacao" class="inicio inicio-programacao">
+        <div class="container">
+            <div class="inicio-content">
+            <h1>Paróquia Nossa Senhora Aparecida</h1>
+            <p>Fazei O que Ele vos disser - João 2,5</p>
+            <a href="#calendar" class="botao botao-primario">Programação mensal</a>      
+            <a href="#programacao" class="botao botao-terciario">Programação semanal</a>
+            </div>
+        </div>
+    </main>
+
+    <h1 class="titulo-pagina">Agenda Paroquial</h1>
+
+    <div id="calendar"></div>
+
+    <!-- JS da agenda -->
+    <script src="js/pages/programacao/agenda.js"></script>
+
+    <!-- ===== PROGRAMAÇÃO SEMANAL ===== -->
+     <section id="programacao"class="programacao-semanal container">
+        <h1>Programação da Semana</h1>
+        <p class="descricao">Confira os eventos que teremos em nossa paróquia</p>
+
+        <div class="grade grade-3">
+            
+            <!-- Domingo -->
+            <article class="card tabela-dourado">
+                <h3>Domingo, 26 de Abril</h3>
+                <div class="evento">
+                    <strong>07h</strong>
+                    <p>Santa Missa</p>
+                    <span>Local: Matriz</span>
+                </div>
+
+                <div class="evento">
+                    <strong>09h</strong>
+                    <p>Santa Missa</p>
+                    <span>Local: Com. Cristo Libertador</span>
+                </div>
+
+                <div class="evento">
+                    <strong>10h30</strong>
+                    <p>Santa Missa</p>
+                    <span>Local: Com. Imaculado Coração de Maria</span>
+                </div>
+
+                <div class="evento">
+                    <strong>19h</strong>
+                    <p>Santa Missa</p>
+                    <span>Local: Matriz</span>
+                </div>
+            </article>
+
+            <!-- Quarta-Feira -->
+            <article class="card tabela-dourado">
+                <h3>Quarta-Feira, 29 de Abril</h3>
+                <div class="evento">
+                    <strong>19h30</strong>
+                    <p>Santa Missa</p>
+                    <span>Local: Matriz</span>
+                </div>
+            </article>
+
+            <!-- Sexta-Feira -->
+            <article class="card tabela-dourado">
+                <h3>Sexta-Feira, 01 de Maio</h3>
+                <div class="evento">
+                    <strong>19h30</strong>
+                    <p>Santa Missa votiva à São José Operário</p>
+                    <span>Local: Matriz</span>
+                </div>
+            </article>
+            
+            <!-- Sábado -->
+            <article class="card tabela-dourado">
+                <h3>Sábado, 02 de Maio</h3>
+                <div class="evento">
+                    <strong>18h</strong>
+                    <p>Santa Missa</p>
+                    <span>Local: Matriz</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- NAVBAR E FOOTER -->
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+</html>

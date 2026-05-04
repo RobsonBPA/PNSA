@@ -1,0 +1,39 @@
+.inicio-index {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/index/FundoIndex.jpg") center/cover no-repeat;
+}
+
+.inicio-programacao {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/programacao/FundoProgramacao.jpg") center/cover no-repeat;
+}
+
+.inicio-oracoes {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/oracoes/FundoOracoes.jpg") center/cover no-repeat;
+}
+
+.inicio-galeria {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/galeria/FundoGaleria.jpg") center/cover no-repeat;
+}
+
+.inicio-orientacoes {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/orientacoes/FundoOrientacoes.jpg") center/cover no-repeat;
+}
+
+.inicio-dizimo {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/dizimo/FundoDizimo.jpg") center/cover no-repeat;
+}
+
+.inicio-padroeira {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/padroeira/FundoPadroeira.jpeg") center/cover no-repeat;
+}
+
+.inicio-secretaria {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/secretaria/FundoSecretaria.jpg") center/cover no-repeat;
+}
+
+.inicio-confissoes {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/confissoes/FundoConfissoes.jpg") center/cover no-repeat;
+}
+
+.inicio-indisponivel {
+    background: rgba(0, 0, 0, 0.5) url("../../images/pages/indisponivel/FundoIndisponivel.png") center/cover no-repeat;
+}

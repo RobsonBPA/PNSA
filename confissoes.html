@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/secretaria/secretaria.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+    <title>Confissões</title>
+</head>
+
+<!-- Navbar e footer -->
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+
+<body>
+    <div id="navbar-placeholder"></div> <!-- Navbar -->
+
+    <!-- Conteúdo principal -->
+    <section id="inicio-confissoes" class="inicio inicio-confissoes">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Confissões</h1>
+                <p>Conheça os horários para se confessar e entrar em estado de graça</p>
+                <a href="#confissoes" class="botao botao-primario">Confira os Horários</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confissões -->
+    <section id="confissoes" class="tabela">
+        <h2>Confissões</h2>
+
+        <h3>Horários</h3>
+        <div class="horarios-confissoes">
+            <p>
+                <strong>Sexta-Feira: </strong>14h às 16h30
+            </p>
+        </div>
+
+        <h3>Como fazer uma boa confissão?</h3>
+        <div class="confissao-tutorial">
+            <p>
+                • Se arrependa de forma real dos seus pecados.
+                <br>
+                • Faça um exame de consciência.
+                <br>
+                • Não omita nenhum pecado.
+                <br>
+                • Tenha firme propósito de mudar de vida e abandonar o pecado.
+                <br>
+                • Cumpra sua penitência (se houver).
+            </p>
+        </div>
+    </section>
+</body>
+<div id="footer-placeholder"></div> <!-- Rodapé -->
+</html>
