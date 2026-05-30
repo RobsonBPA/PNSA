@@ -180,6 +180,10 @@
     grid-template-columns: 1fr;
   }
 
+  .grade {
+    justify-items: center;
+  }
+
   #calendar {
     font-size: 0.9rem;
   }
