@@ -92,19 +92,36 @@
   padding: 40px 6%;
 }
 
-/* Cards */
+/* Grid dos cards */
 .grade {
   display: grid;
   gap: 24px;
+
+  /* mesma altura */
+  align-items: stretch;
+
+  /* centraliza o grid */
+  justify-content: center;
 }
 
+/* Cards */
 .card {
   background: var(--branco);
   padding: 25px;
   border-radius: 18px;
   box-shadow: var(--sombra);
-  min-height: 220px;
   transition: transform 0.2s, box-shadow 0.2s;
+
+  /* mesma largura */
+  width: 100%;
+  max-width: 380px;
+
+  /* mesma altura */
+  height: 100%;
+
+  /* organiza conteúdo interno */
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -172,16 +189,18 @@
 @media (max-width: 900px) {
   .grade {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 }
 
 @media (max-width: 600px) {
   .grade {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
-  .grade {
-    justify-items: center;
+  .card {
+    max-width: 100%;
   }
 
   #calendar {

@@ -3,6 +3,7 @@
 .grade {
   display: grid;
   gap: 24px;
+  align-items: stretch;
 }
 
 .card {
@@ -11,8 +12,16 @@
   border-radius: 18px;
   box-shadow: var(--sombra);
   border-top: 5px solid var(--dourado);
-  min-height: 230px;
   transition: transform 0.2s, box-shadow 0.2s;
+
+  /* deixa todos com mesma altura */
+  height: 100%;
+
+  /* organiza o conteúdo interno */
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
 }
 
 .card:hover {
@@ -62,9 +71,9 @@
 
 
 /* ===== NOSSO CLERO ===== */
+
 .card-clero {
   width: 100%;
-  max-width: 300px;
   margin-bottom: 30px;
 }
 
