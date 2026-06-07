@@ -2,7 +2,7 @@
 
 .botao {
     display: inline-block;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 5px 5px 5px;
     padding: 12px 25px;
     border-radius: 20px;
     font-weight: bold;
@@ -51,7 +51,12 @@
     transform: translateY(-2px);
 }
 
-
+/* Botão em dispositivos pequenos */
+@media (max-width: 900px) {
+  .botao {
+    margin: 0px 5px 15px 5px;
+  }
+}
 
 /* ===== TABELA ===== */
 .tabela {

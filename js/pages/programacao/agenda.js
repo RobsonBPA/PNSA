@@ -146,9 +146,12 @@ document.addEventListener('DOMContentLoaded', function () {
           {title: 'Missa e Procissão - Solenidade de Corpus Christi', date: '2026-06-04T09:00:00', display: 'list-item',
           extendedProps: {
             horario: '09h00', local: 'Matriz'}},
-          {title: 'Confissão', date: '2026-06-05T14:30:00', display: 'list-item',
+          {title: 'Confissão', date: '2026-05-05T14:30:00', display: 'list-item',
           extendedProps: {
-            horario: '14h30', local: 'Matriz'}},
+            horario: '19h30', local: 'Matriz'}},
+          {title: 'Missa Votiva ao Sagrado Coração de Jesus', date: '2026-05-05T14:30:00', display: 'list-item',
+          extendedProps: {
+            horario: '19h30', local: 'Matriz'}},
           {title: 'Missa', date: '2026-06-06T18:00:00', display: 'list-item',
           extendedProps: {
             horario: '18h00', local: 'Matriz'}},
@@ -163,15 +166,24 @@ document.addEventListener('DOMContentLoaded', function () {
           {title: 'Grupo de Oração', date: '2026-06-08T19:30:00', display: 'list-item',
           extendedProps: {
             horario: '19h30', local: 'Matriz'}},
-          {title: 'Missa', date: '2026-06-10T19:30:00', display: 'list-item',
+          {title: 'Missa - 1º Dia do Tríduo do Imaculado Coração de Maria', date: '2026-06-09T19:30:00', display: 'list-item',
           extendedProps: {
-            horario: '19h30', local: 'Matriz'}},
+            horario: '19h30', local: 'Com. Imaculado Coração de Maria'}},
+          {title: 'Missa - 2º Dia do Tríduo do Imaculado Coração de Maria', date: '2026-06-10T19:30:00', display: 'list-item',
+          extendedProps: {
+            horario: '19h30', local: 'Com. Imaculado Coração de Maria'}},
           {title: 'Confissão', date: '2026-06-11T09:30:00', display: 'list-item',
           extendedProps: {
             horario: '09h30', local: 'Matriz'}},
+          {title: 'Missa - 3º Dia do Tríduo do Imaculado Coração de Maria', date: '2026-06-11T19:30:00', display: 'list-item',
+          extendedProps: {
+            horario: '19h30', local: 'Com. Imaculado Coração de Maria'}},
           {title: 'Missa - Solenidade do Sagrado Coração de Jesus', date: '2026-06-12T19:30:00', display: 'list-item',
           extendedProps: {
             horario: '19h30', local: 'Matriz'}},
+          {title: 'Missa - Festa do Imaculado Coração de Maria', date: '2026-06-13T09:00:00', display: 'list-item',
+          extendedProps: {
+            horario: '9h', local: 'Com. Imaculado Coração de Maria'}},
           {title: 'Missa - Memória do Imaculado Coração de Maria', date: '2026-06-13T18:00:00', display: 'list-item',
           extendedProps: {
             horario: '18h00', local: 'Matriz'}},
