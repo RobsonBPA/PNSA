@@ -19,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -28,10 +28,14 @@ header {
 
 /* Logo */
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
 }
 
 /* Links */
