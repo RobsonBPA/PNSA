@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {title: 'Missa', date: '2026-07-01T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '19h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-02T09:30:00', display: 'list-item',
+        {title: 'Confissão', date: '2026-07-02T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
         {title: 'Confissão', date: '2026-07-03T14:30:00', display: 'list-item',
@@ -48,13 +48,13 @@ document.addEventListener('DOMContentLoaded', function () {
         {title: 'Missa', date: '2026-07-08T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '19h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-09T09:30:00', display: 'list-item',
+        {title: 'Confissão', date: '2026-07-09T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
         {title: 'Confissão', date: '2026-07-10T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-11T09:30:00', display: 'list-item',
+        {title: 'Confissão', date: '2026-07-11T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
         {title: 'Missa', date: '2026-07-11T18:00:00', display: 'list-item',
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {title: 'Missa', date: '2026-07-15T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-16T09:30:00', display: 'list-item',
+        {title: 'Confissão', date: '2026-07-16T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
         {title: 'Confissão', date: '2026-07-17T14:30:00', display: 'list-item',
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {title: 'Missa', date: '2026-07-22T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-23T09:30:00', display: 'list-item',
+        {title: 'Confissão', date: '2026-07-23T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
         {title: 'Confissão', date: '2026-07-24T14:30:00', display: 'list-item',
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {title: 'Missa', date: '2026-07-29T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-30T09:30:00', display: 'list-item',
+        {title: 'Confissão', date: '2026-07-30T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
         {title: 'Confissão', date: '2026-07-31T14:30:00', display: 'list-item',
