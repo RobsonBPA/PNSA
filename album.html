@@ -73,7 +73,7 @@
         for (let i = 1; i <= album.total; i++) {
           const img = `
             <div class="foto-item">
-              <img src="${album.caminho}foto${i}.jpg" alt="Foto ${i}">
+              <img src="${album.caminho}${i}.jpg" alt="${i}">
             </div>
           `;
           grid.innerHTML += img;

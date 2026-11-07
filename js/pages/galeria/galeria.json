@@ -5,7 +5,7 @@
     "data": "Abril 2026",
     "caminho": "images/pages/galeria/VigiliaPascal2026/",
     "total": 40,
-    "capa": "images/pages/galeria/VigiliaPascal2026/foto40.jpg"
+    "capa": "images/pages/galeria/VigiliaPascal2026/40.jpg"
   },
 
   {
@@ -14,6 +14,24 @@
     "data": "Julho 2026",
     "caminho": "images/pages/galeria/6DiaCercoJerico2026/",
     "total": 29,
-    "capa": "images/pages/galeria/6DiaCercoJerico2026/foto24.jpg"
+    "capa": "images/pages/galeria/6DiaCercoJerico2026/24.jpg"
+  },
+
+  {
+    "id": "missa-familia",
+    "titulo": "Missa da Família",
+    "data": "Julho 2026",
+    "caminho": "images/pages/galeria/MissaFamilia2026/",
+    "total": 17,
+    "capa": "images/pages/galeria/MissaFamilia2026/16.jpg"
+  },
+
+    {
+    "id": "festa-arcanjos-2026",
+    "titulo": "Festa dos Arcanjos (2026)",
+    "data": "Setembro 2026",
+    "caminho": "images/pages/galeria/FestaArcanjos2026/",
+    "total": 30,
+    "capa": "images/pages/galeria/FestaArcanjos2026/30.jpg"
   }
 ]
