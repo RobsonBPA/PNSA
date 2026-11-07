@@ -1,6 +1,8 @@
 /* ===== FUNDO INÍCIO ===== */
 #inicio-album {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ===== SEÇÃO ===== */

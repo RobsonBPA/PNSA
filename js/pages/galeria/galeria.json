@@ -3,8 +3,17 @@
     "id": "vigilia-pascal-2026",
     "titulo": "Vigília Pascal",
     "data": "Abril 2026",
-    "caminho": "images/pages/galeria/vigiliaPascal2026/",
+    "caminho": "images/pages/galeria/VigiliaPascal2026/",
     "total": 40,
-    "capa": "images/pages/galeria/vigiliaPascal2026/foto40.jpg"
+    "capa": "images/pages/galeria/VigiliaPascal2026/foto40.jpg"
+  },
+
+  {
+    "id": "6-jerico-2026",
+    "titulo": "6º Dia do Cerco de Jericó (2026)",
+    "data": "Julho 2026",
+    "caminho": "images/pages/galeria/6DiaCercoJerico2026/",
+    "total": 29,
+    "capa": "images/pages/galeria/6DiaCercoJerico2026/foto24.jpg"
   }
 ]

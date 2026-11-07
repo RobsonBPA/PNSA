@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="shortcut icon" href="images/global/LogoSite.jpg" type="image/png">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/pages/secretaria/secretaria.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+    <title>Sobre Nós | Paróquia</title>
+</head>
+
+<!-- Navbar e footer -->
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+
+<body>
+    <div id="navbar-placeholder"></div> <!-- Navbar -->
+
+    <!-- Conteúdo principal -->
+    <section id="inicio-secretaria" class="inicio inicio-secretaria">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Sobre Nós</h1>
+                <p>Confira informações sobre a nossa paróquia</p>
+                <a href="#identificacao-institucional" class="botao botao-primario">Ver mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Identificação Institucional -->
+    <section id="identificacao-institucional" class="tabela">
+        <h2>Identificação Institucional</h2>
+        
+        <h3>Paróquia Nossa Senhora Aparecida</h3>
+        <div class="dados">
+            <p>
+                A Paróquia Nossa Senhora Aparecida, localizada na Avenida Ipanema, n.º 1085,
+                Vila Angélica, Sorocaba/SP, integra a Arquidiocese de Sorocaba.
+                
+                <br><br>
+
+                <strong>Razão Social:</strong> Arquidiocese de Sorocaba
+                <br>
+                <strong>CNPJ da Filial:</strong> 45.397.254/0035-72
+
+                <br><br>
+
+                O domínio <strong>aparecidasorocaba.com.br</strong> é utilizado como site institucional
+                da Paróquia Nossa Senhora Aparecida (Vila Angélica) para divulgação de suas atividades
+                pastorais, celebrações, serviços e ações de evangelização.
+
+                <br><br>
+
+                A Paróquia integra a estrutura eclesiástica da Arquidiocese de Sorocaba
+                
+                <br><br>
+                
+                <strong>Referência Institucional:</strong> <a href="https://arquidiocesesorocaba.org.br/paroquia/paroquia-nossa-senhora-aparecida-vila-angelica/" target="_blank">
+                Paróquia Nossa Senhora Aparecida - Site Oficial da Arquidiocese de Sorocaba</a>
+            </p>
+        </div>
+    </section>
+
+</body>
+<div id="footer-placeholder"></div> <!-- Rodapé -->
+</html>
