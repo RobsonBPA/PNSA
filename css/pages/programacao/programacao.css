@@ -53,6 +53,39 @@
   border-radius: 4px;
 }
 
+/* Fundo dos dias conforme o tempo litúrgico */
+.fc .fc-daygrid-day.dia-liturgico-verde {
+  background-color: #e8f5e9;
+}
+
+.fc .fc-daygrid-day.dia-liturgico-roxo {
+  background-color: #f3e5f5;
+}
+
+.fc .fc-daygrid-day.dia-liturgico-preto {
+  background-color: #eeeeee;
+}
+
+.fc .fc-daygrid-day.dia-liturgico-branco {
+  background-color: #fffdf2;
+}
+
+.fc .fc-daygrid-day.dia-liturgico-vermelho {
+  background-color: #ffebee;
+}
+
+.fc .fc-daygrid-day.dia-liturgico-dourado {
+  background-color: #fff8e1;
+}
+
+.fc .fc-daygrid-day.dia-liturgico-azul {
+  background-color: #e3f2fd;
+}
+
+.fc .fc-daygrid-day.dia-liturgico-rosa {
+  background-color: #fce4ec;
+}
+
 /* Tooltip */
 .tooltip-evento {
   position: absolute;
@@ -159,7 +192,7 @@
   color: var(--cinza-texto);
 }
 
-/* ===== Cores Litúrgicas ===== */
+/* ===== CORES LITÚRGICAS ===== */
 .tabela-verde {
     border-top: 5px solid var(--verde);
 }
@@ -177,6 +210,14 @@
 
 .tabela-preto {
   border-top: 5px solid var(--preto);
+}
+
+.tabela-branco {
+  border-top: 5px solid #d6c98b;
+}
+
+.tabela-azul {
+  border-top: 5px solid #1976d2;
 }
 
 .tabela-dourado {

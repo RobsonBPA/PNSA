@@ -11,256 +11,212 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const eventos = [
 
-        // ========= JULHO 2026 ========== //
-        // 1ª Semana (28/06/2026 - 04/07/2026)
-        {title: 'Missa - Solenidade de São Pedro e São Paulo, Apóstolos', date: '2026-06-28', display: 'list-item',
-        extendedProps: {
-            horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-06-29T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-06-29T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-01T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '19h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-02T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-03T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-04T18:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '18h', local: 'Matriz'}},
-
-        // 2ª Semana (05/07/2026 - 11/07/2026)
-        {title: 'Missa', date: '2026-07-05', display: 'list-item',
+        // ========= NOVEMBRO 2026 ========== //
+        // 1ª Semana (01/11/2026 - 07/11/2026)
+        {title: 'Missa - Solenidade de Todos os Santos', date: '2026-11-01', display: 'list-item',
         extendedProps: {
           horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-07-06T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-07-06T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-08T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '19h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-09T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-10T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-11T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-11T18:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '18h', local: 'Matriz'}},
-
-        // 3ª Semana (12/07/2026 - 18/07/2026)
-        {title: 'Missa', date: '2026-07-12', display: 'list-item',
-        extendedProps: {
-          horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-07-13T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-07-13T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-15T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-16T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-17T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-18T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-18T18:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '18h', local: 'Matriz'}},
         
-        // 4ª Semana (19/07/2026 - 25/07/2026)
-        {title: 'Missa', date: '2026-07-19', display: 'list-item',
+        {title: 'Missa - Celebração de Todos os Fiéis Defuntos', date: '2026-11-02T09:00:00', display: 'list-item',
         extendedProps: {
-          horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-07-20T14:30:00', display: 'list-item',
+          horario: '9h', local: 'Matriz'}},
+        
+        {title: 'Legião de Maria', date: '2026-11-02T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-07-20T19:30:00', display: 'list-item',
+
+        {title: 'Grupo de Oração', date: '2026-11-03T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-22T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-23T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-24T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-25T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-25T18:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '18h', local: 'Matriz'}},
-          
-        // 5ª Semana (26/07/2026 - 31/07/2026)
-        {title: 'Missa', date: '2026-07-26', display: 'list-item',
-        extendedProps: {
-          horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-07-27T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-07-27T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-07-29T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-30T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-07-31T14:30:00', display: 'list-item',
+        
+        {title: 'Confissão', date: '2026-11-04T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
         
+        {title: 'Missa - Votiva a São José', date: '2026-11-04T19:30:00', display: 'list-item',
+        extendedProps: {
+          horario: '19h30', local: 'Matriz'}},
         
-        // ========= AGOSTO 2026 ========== //
-        // 1ª Semana (01/08/2026)
-        {title: 'Confissão', date: '2026-08-01T09:00:00', display: 'list-item',
+        {title: 'Confissão', date: '2026-11-05T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa - Memória de Santo Anfonso Maria de Ligório', date: '2026-08-01T18:00:00', display: 'list-item',
+
+        {title: 'Confissão', date: '2026-11-06T14:30:00', display: 'list-item',
+        extendedProps: {
+          horario: '14h30', local: 'Matriz'}},
+        
+        {title: 'Missa - Votiva ao Sagrado Coração de Jesus', date: '2026-11-06T19:30:00', display: 'list-item',
+        extendedProps: {
+          horario: '19h30', local: 'Matriz'}},
+        
+        {title: 'Missa - 32º Domingo do Tempo Comum', date: '2026-11-07T18:00:00', display: 'list-item',
         extendedProps: {
           horario: '18h', local: 'Matriz'}},
 
-        // 2ª Semana (02/08/2026 - 08/08/2026)
-        {title: 'Missa', date: '2026-08-02', display: 'list-item',
+        // 2ª Semana (08/11/2026 - 14/11/2026)
+        {title: 'Missa - 32º Domingo do Tempo Comum', date: '2026-11-08T18:00:00', display: 'list-item',
         extendedProps: {
           horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-08-03T14:30:00', display: 'list-item',
+
+        {title: 'Legião de Maria', date: '2026-11-09T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-08-03T19:30:00', display: 'list-item',
+
+        {title: 'Grupo de Oração', date: '2026-11-10T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-08-05T19:30:00', display: 'list-item',
+
+        {title: 'Missa', date: '2026-11-11T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '19h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-06T09:00:00', display: 'list-item',
+
+        {title: 'Confissão', date: '2026-11-12T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-07T14:30:00', display: 'list-item',
+
+        {title: 'Confissão', date: '2026-11-13T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
-        {title: 'Missa - Votiva ao Sagrado Coração de Jesus', date: '2026-08-07T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '19h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-08T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa', date: '2026-08-08T18:00:00', display: 'list-item',
+
+        {title: 'Missa - 33º Domingo do Tempo Comum', date: '2026-11-14T18:00:00', display: 'list-item',
         extendedProps: {
           horario: '18h', local: 'Matriz'}},
   
-        // 3ª Semana (09/08/2026 - 15/08/2026)
-        {title: 'Missa', date: '2026-08-09', display: 'list-item',
+        // 3ª Semana (15/11/2026 - 21/11/2026)
+        {title: 'Missa - 33º Domingo do Tempo Comum', date: '2026-11-15', display: 'list-item',
         extendedProps: {
           horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-08-10T14:30:00', display: 'list-item',
+
+        {title: 'Legião de Maria', date: '2026-11-16T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-08-10T19:30:00', display: 'list-item',
+
+        {title: 'Grupo de Oração', date: '2026-11-17T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa - Votiva a São Miguel', date: '2026-08-12T19:30:00', display: 'list-item',
+
+        {title: 'Missa', date: '2026-11-18T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-13T09:00:00', display: 'list-item',
+        
+        {title: 'Confissão', date: '2026-11-19T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-14T14:30:00', display: 'list-item',
+
+        {title: 'Missa Com Unção dos Enfermos', date: '2026-11-20T15:00:00', display: 'list-item',
         extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-15T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa - Solenidade da Assunção da Bem-Aventurada Virgem Maria', date: '2026-08-15T18:00:00', display: 'list-item',
+          horario: '15h', local: 'Matriz'}},
+
+        {title: 'Missa - Solenidade do Nosso Senhor Jesus Cristo, Rei do Universo', date: '2026-11-21T18:00:00', display: 'list-item',
         extendedProps: {
           horario: '18h', local: 'Matriz'}},
           
-        // 4ª Semana (16/08/2026 - 22/08/2026)
-        {title: 'Missa - Solenidade da Assunção da Bem-Aventurada Virgem Maria', date: '2026-08-16', display: 'list-item',
+        // 4ª Semana (22/11/2026 - 28/11/2026)
+        {title: 'Missa - Solenidade do Nosso Senhor Jesus Cristo, Rei do Universo', date: '2026-11-22', display: 'list-item',
         extendedProps: {
           horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-08-17T14:30:00', display: 'list-item',
+
+        {title: 'Legião de Maria', date: '2026-11-23T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-08-17T19:30:00', display: 'list-item',
+
+        {title: 'Grupo de Oração', date: '2026-11-24T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa - Votiva a Mãe Rainha', date: '2026-08-19T19:30:00', display: 'list-item',
+
+        {title: 'Missa', date: '2026-11-25T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-20T09:00:00', display: 'list-item',
+        
+        {title: 'Confissão', date: '2026-11-26T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa com Unção dos Enfermos - Memória de São Pio X', date: '2026-08-21T15:00:00', display: 'list-item',
+
+        {title: 'Confissão', date: '2026-11-27T14:30:00', display: 'list-item',
         extendedProps: {
-          horario: '15h', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-22T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa - Memória da Virgem Santa Maria, Rainha', date: '2026-08-22T18:00:00', display: 'list-item',
+          horario: '14h30', local: 'Matriz'}},
+
+        {title: 'Missa - 1º Domingo do Advento', date: '2026-11-28T18:00:00', display: 'list-item',
         extendedProps: {
           horario: '18h', local: 'Matriz'}},
             
-        // 5ª Semana (23/08/2026 - 29/08/2026)
-        {title: 'Missa', date: '2026-08-23', display: 'list-item',
+        // 5ª Semana (29/11/2026 - 05/12/2026)
+        {title: 'Missa - 1º Domingo do Advento', date: '2026-11-29', display: 'list-item',
         extendedProps: {
           horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-08-24T14:30:00', display: 'list-item',
+
+        {title: 'Legião de Maria', date: '2026-11-30T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-08-24T19:30:00', display: 'list-item',
+
+        {title: 'Grupo de Oração', date: '2026-12-01T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '19h30', local: 'Matriz'}},
-        {title: 'Missa - Benção aos Casais', date: '2026-08-26T19:30:00', display: 'list-item',
+
+        {title: 'Missa', date: '2026-12-02T19:30:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-27T09:00:00', display: 'list-item',
+        
+        {title: 'Confissão', date: '2026-12-03T09:00:00', display: 'list-item',
         extendedProps: {
           horario: '09h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-28T14:30:00', display: 'list-item',
+
+        {title: 'Confissão', date: '2026-12-04T14:30:00', display: 'list-item',
         extendedProps: {
           horario: '14h30', local: 'Matriz'}},
-        {title: 'Confissão', date: '2026-08-29T09:00:00', display: 'list-item',
-        extendedProps: {
-          horario: '09h30', local: 'Matriz'}},
-        {title: 'Missa - Memória do Martírio de São João Batista', date: '2026-08-29T18:00:00', display: 'list-item',
+
+        {title: 'Missa - 2º Domingo do Advento', date: '2026-12-05T18:00:00', display: 'list-item',
         extendedProps: {
           horario: '18h', local: 'Matriz'}},
         
-        // 5ª Semana (30/08/2026 - 31/08/2026)
-        {title: 'Missa', date: '2026-08-30', display: 'list-item',
-        extendedProps: {
-          horario: '7h, 9h, 10h30 e 19h', local: 'Matriz e Comunidades'}},
-        {title: 'Legião de Maria', date: '2026-08-31T14:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '14h30', local: 'Matriz'}},
-        {title: 'Grupo de Oração', date: '2026-08-31T19:30:00', display: 'list-item',
-        extendedProps: {
-          horario: '19h30', local: 'Matriz'}},
   ];
+
+  // Períodos do ano litúrgico de 2026, conforme o calendário do Brasil.
+  const periodosLiturgicos = [
+    { inicio: '2026-01-01', fim: '2026-01-11', cor: 'branco' }, // Tempo do Natal
+    { inicio: '2026-01-12', fim: '2026-02-17', cor: 'verde' }, // Tempo Comum
+    { inicio: '2026-02-18', fim: '2026-04-04', cor: 'roxo' },  // Quaresma e Semana Santa
+    { inicio: '2026-04-05', fim: '2026-05-24', cor: 'branco' }, // Tempo Pascal
+    { inicio: '2026-05-25', fim: '2026-11-28', cor: 'verde' }, // Tempo Comum
+    { inicio: '2026-11-29', fim: '2026-12-24', cor: 'roxo' }, // Advento
+    { inicio: '2026-12-25', fim: '2026-12-31', cor: 'branco' } // Tempo do Natal
+  ];
+
+  // Celebrações próprias prevalecem sobre a cor geral do tempo litúrgico.
+  // Azul e dourado são destaques visuais solicitados para o site.
+  const coresLiturgicasPorData = {
+    '2026-11-01': 'dourado',  // Todos os Santos
+    '2026-11-02': 'preto',    // Fiéis Defuntos (Finados)
+    '2026-11-04': 'branco',   // Votiva a São José
+    '2026-11-06': 'vermelho', // Votiva ao Sagrado Coração de Jesus
+    '2026-11-21': 'dourado',  // Cristo Rei
+    '2026-11-22': 'dourado',  // Cristo Rei
+    '2026-11-29': 'roxo',     // Primeiro Domingo do Advento
+    '2026-12-08': 'azul',     // Imaculada Conceição
+    '2026-12-12': 'rosa',     // Domingo Gaudete
+    '2026-12-13': 'rosa',     // Domingo Gaudete
+    '2026-12-24': 'dourado',  // Véspera do Natal do Senhor
+    '2026-12-25': 'dourado',  // Natal do Senhor
+    '2026-12-26': 'dourado',  // Sagrada Família
+    '2026-12-27': 'dourado',  // Sagrada Família
+  };
+
+  function corLiturgica(data) {
+    if (coresLiturgicasPorData[data]) return coresLiturgicasPorData[data];
+
+    const periodo = periodosLiturgicos.find(({ inicio, fim }) =>
+      data >= inicio && data <= fim
+    );
+
+    return periodo?.cor || null;
+  }
+
+  function dataISO(data) {
+    const ano = data.getFullYear();
+    const mes = String(data.getMonth() + 1).padStart(2, '0');
+    const dia = String(data.getDate()).padStart(2, '0');
+    return `${ano}-${mes}-${dia}`;
+  }
 
   // =====================================================
   // PROGRAMAÇÃO SEMANAL AUTOMÁTICA
@@ -325,7 +281,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const card = document.createElement('article');
 
-      card.className = 'card tabela-dourado';
+      const cor = corLiturgica(data);
+      card.className = `card ${cor ? `tabela-${cor}` : 'tabela-dourado'}`;
 
       let html = `
         <h3 style="text-transform: capitalize;">
@@ -385,6 +342,12 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     events: eventos,
+
+    // Colore o fundo de cada dia segundo o tempo litúrgico.
+    dayCellClassNames: function (info) {
+      const cor = corLiturgica(dataISO(info.date));
+      return cor ? [`dia-liturgico-${cor}`] : [];
+    },
 
     // =================================================
     // TOOLTIP
